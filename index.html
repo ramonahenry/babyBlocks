@@ -1,0 +1,26 @@
+<script src="https://ucarecdn.com/widget/3.x/uploadcare/uploadcare.full.min.js" charset="utf-8"></script>
+
+<script>
+  UPLOADCARE_PUBLIC_KEY = "demopublickey";
+</script>
+
+<fieldset>
+  <legend>Upload Images</legend>
+
+  <form>
+    
+    <p>
+      <label for="question">Caption</label>
+      <textarea id="question" name="question"></textarea>
+    </p>
+
+    <p>
+      <label for="images">Your images</label>
+      <input type="hidden" id="images" name="images"
+             role="uploadcare-uploader" data-clearable="" data-images-only="true" data-crop="free,2:3,4:3,16:9"/>
+    </p>
+    <p>
+      <button type="submit">Submit</button>
+    </p>
+  </form>
+</fieldset>
